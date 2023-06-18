@@ -71,7 +71,6 @@ void GameScene::gameOver()
     else {
         myDialog->showMsg("棋逢对手");
     }
-    //QMessageBox::information(this, "五子棋", str + "胜利");
 }
 
 GameScene::~GameScene()
@@ -98,14 +97,12 @@ void GameScene::begHand()
         emit SendBegHand("后手,");
         ui->label_3->setText("黑棋");
         myDialog->showMsg("你获得先手");
-        //QMessageBox::information(this, "提示", "你获得先手");
     }
     else
     {
         emit SendBegHand("先手,");
         ui->label_3->setText("白棋");
         myDialog->showMsg("对方先手");
-        //QMessageBox::information(this, "提示", "对方先手");
     }
 }
 
