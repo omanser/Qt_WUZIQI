@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ConnGame</class>
+ <widget class="QWidget" name="ConnGame">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>649</width>
+    <height>429</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QPushButton" name="backBtn">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>360</y>
+     <width>96</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    font-family:Microsoft Yahei;
+	font: 14pt &quot;华文行楷&quot;;
+    font:20px;
+    color:black;
+    background-color:rgb(219 , 219 , 219);
+    border-radius:15px;
+    height:40px;
+    width:150px;
+}
+
+QPushButton:hover
+{
+	color: rgb(255, 85, 0);
+}
+
+QPushButton:pressed
+{
+    background-color:rgb(219 , 217 , 240);
+    padding-left:3px;
+    padding-top:3px;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>返回</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget_2" native="true">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>120</y>
+     <width>321</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <layout class="QFormLayout" name="formLayout">
+    <item row="0" column="0">
+     <widget class="QLabel" name="label">
+      <property name="font">
+       <font>
+        <family>华文新魏</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>ip号：</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="ip"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>170</y>
+     <width>218</width>
+     <height>151</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QPushButton" name="creatBtn">
+      <property name="font">
+       <font>
+        <family>华文行楷</family>
+        <pointsize>-1</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+    font-family:Microsoft Yahei;
+	font: 14pt &quot;华文行楷&quot;;
+    font:20px;
+    color:black;
+    background-color:rgb(219 , 219 , 219);
+    border-radius:15px;
+    height:50px;
+    width:200px;
+}
+
+QPushButton:hover
+{
+    background-color:rgb(219 , 218 , 240);
+}
+
+QPushButton:pressed
+{
+    background-color:rgb(219 , 217 , 240);
+    padding-left:3px;
+    padding-top:3px;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>创建房间</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="verticalSpacer">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QPushButton" name="joinBtn">
+      <property name="font">
+       <font>
+        <family>华文行楷</family>
+        <pointsize>-1</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+    font-family:Microsoft Yahei;
+	font: 14pt &quot;华文行楷&quot;;
+    font:20px;
+    color:black;
+    background-color:rgb(219 , 219 , 219);
+    border-radius:15px;
+    height:50px;
+    width:200px;
+}
+
+QPushButton:hover
+{
+    background-color:rgb(219 , 218 , 240);
+}
+
+QPushButton:pressed
+{
+    background-color:rgb(219 , 217 , 240);
+    padding-left:3px;
+    padding-top:3px;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>加入房间</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
